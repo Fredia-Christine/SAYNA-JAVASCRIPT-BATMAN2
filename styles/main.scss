@@ -1,0 +1,36 @@
+import'./popup';
+
+#home {
+    .fade-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 300ms ease-in transform,
+                    300ms ease-in opacity;
+    }
+    .show-content {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .fade {
+        animation: fadeIn 3s;
+    }
+    header {
+        background: url(../assets/illustrations/home/Bathome1.png)
+        no-repeat top center;
+@@ -350,7 +363,16 @@
+        background-color: $blue;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#game {
+    header {
+        background: url(../assets/illustrations/batgame/Batgame_1.png) no-repeat top center;
