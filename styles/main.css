@@ -1,0 +1,47 @@
+text-transform: uppercase;
+}
+
+#home .fade-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 300ms ease-in transform, 300ms ease-in opacity;
+}
+#home .show-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+#home .fade {
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+}
+#home header {
+  background: url(../assets/illustrations/home/Bathome1.png) no-repeat top center;
+}
+@@ -740,6 +753,27 @@ aside .icon-large img {
+  background-color: #19587d;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#game header {
+  background: url(../assets/illustrations/batgame/Batgame_1.png) no-repeat top center;
+  height: calc(100vh + 150px)
